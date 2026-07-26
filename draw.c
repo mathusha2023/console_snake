@@ -1,7 +1,6 @@
 #include "config.h"
-#include "fruit.h"
 #include "platform.h"
-#include "snake.h"
+#include "draw.h"
 #include <stdio.h>
 
 void draw(Snake *psnake, Fruit *pfruit, int score)

@@ -1,5 +1,5 @@
 #include "platform.h"
-#include "snake.h"
+#include "input.h"
 #include <ctype.h>
 
 void input(Snake *psnake)

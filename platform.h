@@ -4,7 +4,7 @@
 #include <conio.h>
 #include <windows.h>
 #define clear() system("cls")
-#define delay() Sleep(SLEEP_TIME)
+#define delay() Sleep(1)
 #define getch() (_kbhit() ? _getch() : '\0')
 #define hide_cursor()                                                                                                  \
     {                                                                                                                  \
@@ -19,14 +19,14 @@
 #include <unistd.h>
 #include <stdio.h>
 #define clear() system("clear")
-#define delay() usleep(SLEEP_TIME * 1000)
+#define delay() usleep(1000)
 #define hide_cursor printf("\e[?25l")
 
 #elif __linux__
 #include <unistd.h>
 #include <stdio.h>
 #define clear() system("clear")
-#define delay() usleep(SLEEP_TIME * 1000)
+#define delay() usleep(1000)
 #define hide_cursor printf("\e[?25l")
 
 #endif
