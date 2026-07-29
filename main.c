@@ -10,7 +10,7 @@ void game()
     int score = 0;
 
     clock_t last_move = clock();
-    const clock_t move_delay = 0;
+    const clock_t move_delay = CLOCKS_PER_SEC / 6;
 
     while (1)
     {
