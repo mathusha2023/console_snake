@@ -10,12 +10,12 @@ void game()
     int score = 0;
 
     clock_t last_move = clock();
-    const clock_t move_delay = CLOCKS_PER_SEC / 6;
+    const clock_t move_delay = 0;
 
     while (1)
     {
         input(&snake);
-        if (update(&snake, &fruit, &last_move, move_delay, &score))
+        if (update(&snake, &fruit, &last_move, move_delay, &score)) // 1, если игра закончилась (врезался)
             break;
         draw(&snake, &fruit, score);
         delay();
